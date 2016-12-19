@@ -1,0 +1,165 @@
+ @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700";
+ #navbar {
+     font-family: 'Open Sans Condensed', Arial, Verdana;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ .navbar {
+    min-height: 40px;
+ }
+ .dropdown-menu > li.kopie > a {
+     padding-left: 5px;
+ }
+ .dropdown-submenu {
+     position: relative;
+ }
+ .dropdown-submenu>.dropdown-menu {
+     top: -2px;
+     left: 100%;
+ }
+ .dropdown-submenu > a:after {
+     border-color: transparent transparent transparent #fff;
+     border-style: solid;
+     border-width: 5px 0 5px 5px;
+     content: " ";
+     display: block;
+     float: right;
+     height: 0;
+     margin-right: -10px;
+     margin-top: 5px;
+     width: 0;
+ }
+ .dropdown-submenu:hover>a:after {
+     border-left-color: #fff;
+ }
+ .dropdown-menu > li > a:hover,
+ .dropdown-menu > .active > a:hover {
+     text-decoration: underline;
+ }
+ @media (max-width: 767px) {
+     .navbar-nav {
+         display: inline;
+     }
+     .navbar-default .navbar-brand {
+         display: inline;
+     }
+     .navbar-default .navbar-toggle .icon-bar {
+         background-color: #fff;
+     }
+     .navbar-default .navbar-nav .dropdown-menu > li > a {
+         color: red;
+         background-color: #ccc;
+         border-radius: 4px;
+         margin-top: 2px;
+     }
+     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+         color: #333;
+     }
+     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+         background-color: #ccc;
+     }
+     .navbar-nav .open .dropdown-menu {
+         border-bottom: 1px solid white;
+         border-radius: 0;
+     }
+     .dropdown-menu {
+         padding-left: 10px;
+     }
+     .dropdown-menu .dropdown-menu {
+         padding-left: 20px;
+     }
+     .dropdown-menu .dropdown-menu .dropdown-menu {
+         padding-left: 30px;
+     }
+     li.dropdown.open {
+         border: 0px solid red;
+     }
+ }
+ @media (min-width: 768px) {
+     .navbar {
+      margin-bottom: 0;
+     }
+     .navbar-nav>li {
+         vertical-align: baseline;
+         display: table-cell;
+         float: none;
+     }
+     .dropdown-menu.first-level > li {
+        border-top: 1px solid #1b5eaa;
+     }
+     .dropdown-menu.first-level > li:first-child {
+      border-top: none;
+     }
+     ul.nav li:hover > ul.dropdown-menu {
+         display: block;
+     }
+     #navbar {
+         text-align: center;
+     }
+     .dropdown-submenu {
+         position: static;
+         background: #171717;
+     }
+     .dropdown-menu {
+         background: #171717;
+     }
+     .dropdown-menu > li > a {
+         color: #fff;
+     }
+     .dropdown-menu > li > a:focus,
+     .dropdown-menu > li > a:hover {
+         background-color: #000;
+         color: #FEC938;
+         text-decoration: none;
+     }
+     .collapse.navbar-collapse {
+         max-width: 1040px;
+         margin: 0 auto;
+     }
+     .dropdown-menu-right {
+         margin-left: 0;
+     }
+     .dropdown-submenu .dropdown-menu.dropdown-menu-left {
+         left: -118%;
+         min-width: 190px;
+     }
+     
+     .dropdown-menu,
+     .dropdown {
+         border-radius: 0;
+         box-shadow: initial;
+         border: none;
+     }
+     .dropdown-submenu > a:after {
+         border-top-color: transparent;
+         border-right-color: transparent;
+         border-bottom-color: transparent;
+         border-left-color: rgb(255, 255, 255);
+     }
+     .navbar-default {
+         border: none;
+     }
+     .navbar-default .navbar-nav > li > a {
+         color: #084388;
+         width: 102px;
+         height: 80px;
+         padding: 10px 1px;
+         font-size: 11px;
+         height: auto;
+     }
+     .navbar-nav > li > .dropdown-menu:before {
+         content: "";
+         display: block;
+         background: url('../img/sprite-arrow.png') no-repeat -61px 0;
+         width: 20px;
+         height: 10px;
+         position: absolute;
+         left: 25%;
+         top: -10px;
+     }
+     .navbar-nav > li > .dropdown-menu.pull-right:before {
+         right: 15%;
+         left: initial;
+     }
+ }
